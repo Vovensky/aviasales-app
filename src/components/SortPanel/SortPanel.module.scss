@@ -1,0 +1,16 @@
+.sortPanel {
+    width: 502px;
+    display: flex;
+    border: none;
+}
+
+.sortPanel__button {
+    flex-grow: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px
+}
