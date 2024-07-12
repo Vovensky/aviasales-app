@@ -2,15 +2,37 @@
     width: 502px;
     display: flex;
     border: none;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .sortPanel__button {
     flex-grow: 1;
     height: 50px;
-    display: flex;
+    display: none;
+    position: absolute;
     align-items: center;
     justify-content: center;
     background-color: white;
     border: 1px solid #E5E5E5;
-    border-radius: 5px
+    border-radius: 15px;
+}
+
+.sortPanel__visualButton {
+    height: 50px;
+    width: 50%;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px; 
+    border: 1px solid rgba(223, 229, 236, 1);
+    border-radius: 5px 0px 0px 5px;
+    margin: 0;
+    padding: 0
+}
+
+.sortPanel__visualButtonChecked {
+    background-color: rgba(33, 150, 243, 1);
+    color: white;
 }

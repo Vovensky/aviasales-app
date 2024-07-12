@@ -9,21 +9,22 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
-    padding-bottom: 40px
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
 .header-logo__background {
     display: block;
     position: relative;
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .header-logo__plane{
-    max-width: 45px;
-    max-height: 38px;
+    width: 50px;
+    height: 50px;
     display: block;
     position: absolute;
-    top: 48px
+    top:60px
 }

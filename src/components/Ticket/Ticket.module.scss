@@ -2,11 +2,12 @@
     width: 502px;
     height: 184px;
     background-color: white;
-    border: 2px solid lightblue;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
+    border-radius: 5px
 }
 
 .ticketContainer__header {
@@ -44,6 +45,12 @@
     width: 33.3%;
     font-size: 14px;
     display:flex;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.ticketContainer__textTitle {
+    color: rgba(160, 176, 185, 1);
+
 }
 

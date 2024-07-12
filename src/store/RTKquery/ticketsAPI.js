@@ -10,7 +10,7 @@ export const ticketsApi = createApi({
       getTickets: builder.query({
         query: (data) => {
           if (data) return `tickets?searchId=${data.searchId}`
-          return null
+          return { data: '', error: '' }
         },
         keepUnusedDataFor: 0,
       }),

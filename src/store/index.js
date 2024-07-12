@@ -2,6 +2,8 @@ import { configureStore } from '@reduxjs/toolkit'
 
 import checkBoxesReducer from './checkBoxes'
 import ticketsReducer from './ticketStore'
+import errorsReducer from './numberOfErrors'
+import toolBarReducer from './toolBarState'
 import { ticketsApi } from './RTKquery/ticketsAPI'
 
 export default configureStore({
@@ -9,6 +11,8 @@ export default configureStore({
         checkBoxes: checkBoxesReducer, // первый тудус
         [ticketsApi.reducerPath]: ticketsApi.reducer,
         getTickets: ticketsReducer,
+        toolBarState: toolBarReducer,
+        setError: errorsReducer,
     }, // обычно называется срезами
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(ticketsApi.middleware),
 })

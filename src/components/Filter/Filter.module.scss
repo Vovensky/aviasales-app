@@ -1,17 +1,25 @@
 .filterPanel {
     width: 232px;
-    background-color: green;
-    padding-left: 10px;
+    padding-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+    height: 252px;
+    padding-top: 20px
 }
 
 .filterPanel__article {
-    font-size: 12px
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .filterPanel__list {
     width: 100%;
     list-style: none;
     padding-inline-start: 0;
+    margin-top: 0px;
 }
 
 .filterPanel__listItem {
@@ -22,5 +30,23 @@
 }
 
 .filterPanel__listItem:hover {
-    background-color: white
+    background-color: rgba(241, 252, 255, 1)
+}
+
+.checkBoxes__styled {
+    width: 20px;
+    height: 20px;
+}
+
+.filterPanel__label {
+    display: flex;
+    width: 100%;
+}
+
+.filterPanel__labelText {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 13px;
 }

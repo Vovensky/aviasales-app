@@ -1,17 +1,27 @@
 import classes from './SortPanel.module.scss'
 
-export default function SortPanel() {
+export default function SortPanel(props) {
+  const { sortingSettings, mode } = props
+  let marking
+  const classess = `${classes.sortPanel__visualButton} ${classes.sortPanel__visualButtonChecked} `
+  if (mode === 'price') {
+    marking = (
+      <>
+        <button type="button" className={classess} onClick={() => sortingSettings('price')}> Самый дешевый </button>
+        <button type="button" className={classes.sortPanel__visualButton} onClick={() => sortingSettings('duration')}> Самый быстрый </button>
+      </>
+    )
+  } else {
+    marking = (
+      <>
+        <button type="button" className={classes.sortPanel__visualButton} onClick={() => sortingSettings('price')}> Самый дешевый </button>
+        <button type="button" className={classess} onClick={() => sortingSettings('duration')}> Самый быстрый </button>
+      </>
+    )
+  }
   return (
     <div className={classes.sortPanel}>
-      <button type="button" className={classes.sortPanel__button}>
-        Самый дешевый
-      </button>
-      <button type="button" className={classes.sortPanel__button}>
-        Самый быстрый
-      </button>
-      <button type="button" className={classes.sortPanel__button}>
-        Оптимальный
-      </button>
+      {marking}
     </div>
   )
 }
